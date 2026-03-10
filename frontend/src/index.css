@@ -1,0 +1,153 @@
+@import "tailwindcss";
+
+/* Custom Color Palette */
+:root {
+  /* Base Colors */
+  --color-deep-slate: #0f172a;
+  --color-slate-800: #1e293b;
+  --color-slate-700: #334155;
+  --color-slate-600: #475569;
+  --color-slate-400: #94a3b8;
+
+  /* Accent Colors */
+  --color-critical: #ff2e2e;
+  --color-safe: #00f0ff;
+  --color-warning: #ffc107;
+  --color-accent: #06b6d4;
+}
+
+/* Typography */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap");
+
+body {
+  font-family: "Inter", system-ui, sans-serif;
+  background-color: var(--color-deep-slate);
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.font-mono {
+  font-family: "JetBrains Mono", monospace;
+}
+
+/* Glassmorphism */
+.glass-panel {
+  background: rgba(30, 41, 59, 0.8);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+}
+
+.glass-card {
+  background: rgba(30, 41, 59, 0.6);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+}
+
+/* Glow Effects */
+.glow-critical {
+  box-shadow: 0 0 20px rgba(255, 46, 46, 0.4);
+}
+
+.glow-safe {
+  box-shadow: 0 0 20px rgba(0, 240, 255, 0.3);
+}
+
+.glow-warning {
+  box-shadow: 0 0 20px rgba(255, 193, 7, 0.3);
+}
+
+/* Pulsing Animation */
+@keyframes pulse {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(1.3);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.pulse {
+  animation: pulse 2s ease-in-out infinite;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-slate-800);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-slate-600);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-slate-400);
+}
+
+/* Status Badge Colors */
+.badge-critical {
+  background-color: var(--color-critical);
+  color: white;
+}
+
+.badge-warning {
+  background-color: var(--color-warning);
+  color: #0f172a;
+}
+
+.badge-safe {
+  background-color: var(--color-safe);
+  color: #0f172a;
+}
+
+.badge-medium {
+  background-color: #f97316;
+  color: white;
+}
+
+/* Text Colors */
+.text-critical {
+  color: var(--color-critical);
+}
+.text-safe {
+  color: var(--color-safe);
+}
+.text-warning {
+  color: var(--color-warning);
+}
+.text-accent {
+  color: var(--color-accent);
+}
+.text-muted {
+  color: var(--color-slate-400);
+}
+
+/* Background Colors */
+.bg-deep-slate {
+  background-color: var(--color-deep-slate);
+}
+.bg-slate-800 {
+  background-color: var(--color-slate-800);
+}
+.bg-slate-700 {
+  background-color: var(--color-slate-700);
+}
+
+/* Border Colors */
+.border-subtle {
+  border-color: rgba(255, 255, 255, 0.1);
+}

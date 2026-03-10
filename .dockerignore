@@ -1,0 +1,44 @@
+# Dependencies
+node_modules
+frontend/node_modules
+__pycache__
+*.pyc
+.pytest_cache
+.mypy_cache
+
+# Build outputs
+frontend/dist
+*.egg-info
+dist
+build
+
+# IDE and OS
+.git
+.gitignore
+.vscode
+.idea
+*.swp
+*.swo
+Thumbs.db
+.DS_Store
+
+# Logs and temp files
+*.log
+logs
+tmp
+.cache
+
+# Documentation
+README.md
+docs
+*.md
+
+# Tests
+tests
+test_*.py
+*_test.py
+
+# Docker files (don't need inside container)
+Dockerfile*
+docker-compose*.yml
+.dockerignore
