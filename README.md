@@ -170,13 +170,6 @@ Solution/
 
 ---
 
-## 👥 Team
-
-_[Add your team members here]_
-
----
-
 ## 📄 License
 
 This project is for the CMHK AI Hackathon 2025.
-# fraud-detection
